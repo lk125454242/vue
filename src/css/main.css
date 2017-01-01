@@ -1,0 +1,27 @@
+    html,body{
+        min-height: 100%;
+    }
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+    }
+    .footer_placeholder{
+        height: 55px;
+    }
+    /* 动画样式 */
+    .slide-fade-enter{ /*进入*/
+        transform: translateY(100%);
+    }
+    .slide-fade-enter-active {/*进入结束*/
+        transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .slide-fade-leave-active {/*离开*/
+        transform: translateY(-100%);
+    }
+    .slide-fade-leave-active {/*离开结束*/
+        transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
